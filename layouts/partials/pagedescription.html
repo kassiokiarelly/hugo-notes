@@ -1,5 +1,5 @@
 <div class="description">
-	{{ if isset .Params "description" }}
+	{{ if strings.ContainsNonSpace .Description }}
 	{{ .Description }}
 	{{ else }}
 	{{ .Summary }}&hellip;
